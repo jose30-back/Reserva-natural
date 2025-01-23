@@ -1,4 +1,4 @@
-package model;
+package dev.jose.reserva.natural.model;
 
 import java.time.LocalDate;
 
