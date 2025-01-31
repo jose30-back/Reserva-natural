@@ -2,23 +2,31 @@ package dev.jose.reserva.natural.model;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name = "animals")
 public class Animal {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    
+    @Column(nullable = false)
     private String name;
     private String type;
     private String family;
     private String gender;
     private String country;
     private LocalDate dateOfEntry;
+
+    public Animal() {
+    }    
 
     public Animal(long id, String name, String type, String family, String gender, String country,
             LocalDate dateOfEntry) {
