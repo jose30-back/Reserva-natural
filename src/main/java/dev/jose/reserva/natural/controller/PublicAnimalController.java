@@ -36,7 +36,7 @@ public class PublicAnimalController {
         return animalRepository.findByCountry(country);
     }
 
-    @GetMapping("/animals/family-type/{family}-{type}")
+    @GetMapping("/animals/family-type/{family}/{type}")
     public List<Animal> getForFamilyAndType (@RequestParam String family, @RequestParam String type) {
         return animalRepository.findByFamilyAndType(family, type);
     }
