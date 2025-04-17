@@ -6,7 +6,7 @@ Este proyecto consiste en la creación de una API para la gestión y mantenimien
 
 ---
 
-## Tecnologías Utilizadas
+## Tecnologías Utilizadas en este proyecto
 
 - **Backend**: Spring Boot (Java)
 - **Base de Datos**: MySQL
